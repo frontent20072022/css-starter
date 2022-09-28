@@ -138,16 +138,32 @@ img{
   text-align: center;
   margin-bottom: 92px;
 }
-.skills-group {
-  display: flex;
+
+.speaking{ grid-area: menu; }
+.writing{ grid-area: main; }
+.reading{ grid-area: right; }
+.listening{ grid-area: footer; }
+
+.grid-container {
+  /* display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center; */
+  display: grid;
+  grid-template-areas:
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 18px;
+  /* padding: 10px; */
 }
+.grid-container > div {
+  padding: 20px 0;
+}
+
 .speaking {
   background-color: #F5F5F5;
   border-radius: 10px;
-  padding: 39px 23px;
-  margin-right: 18px;
+  /* padding: 39px 23px; */
+  /* margin-right: 18px; */
   /* width: 30%; */
 }
 .speaking-img {
@@ -171,20 +187,22 @@ img{
 .btn {
 }
 .skills-btn {
+
 }
 .skill-groups {
 /* width: 70%; */
 }
 .skill-groups-top {
-  display: flex;
-  margin-bottom: 20px;
+  /* display: flex;
+  margin-bottom: 20px; */
   /* align-items: center; */
 }
 .writing {
   background-color: #F5F5F5;
   border-radius: 10px;
-  margin-right: 18px;
-  padding: 4px 19px 44px 41px;
+  padding: 43px;
+  /* margin-right: 18px; */
+  /* padding: 4px 19px 44px 41px; */
 }
 .writing-img {
 }
@@ -194,7 +212,8 @@ img{
 .reading {
   background-color: #F5F5F5;
   border-radius: 10px;
-  padding: 9px 19px 44px 41px;
+  padding: 43px;
+  /* padding: 9px 19px 44px 41px; */
 }
 .reading-img {
 }
@@ -207,6 +226,12 @@ color: #263238;
 .listening {
   background-color: #F5F5F5;
   border-radius: 10px;
+  padding-left: 43px;
+}
+.listening{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 }
 .listening-title {
 }

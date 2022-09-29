@@ -78,6 +78,7 @@ img{
   color: var(--accent-color)
 }
 .site-header-btn{
+  background-color: #fff;
   color: var(--title-color);
   padding: 17px 57px;
   border-radius: 5px;

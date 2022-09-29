@@ -47,6 +47,40 @@ img{
   margin: 0 auto;
 }
 
+.text {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--text-color);
+}
+.title {
+  margin: 0;
+  font-weight: 600;
+  line-height: 80px;
+}
+.btn{
+  /* display: inline-block; */
+  border:transparent;
+  line-height: normal;
+  background: var(--accent-color);
+  color:#fff;
+  transition: color 0.3s ease,
+  background-color 0.3s ease;
+}
+.link{
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.6;
+}
+.link:hover{
+  color:var(--text-color);
+  opacity: 0.8;
+}
+.link:active{
+  opacity: 0.6;
+}
+
+
 /* HEADER */
 .site-header {
   padding-top: 55px;
@@ -100,38 +134,7 @@ img{
 
 
 /* Main */
-.text {
-  margin: 0;
-  font-size: 16px;
-  line-height: normal;
-  color: var(--text-color);
-}
-.title {
-  margin: 0;
-  font-weight: 600;
-  line-height: 80px;
-}
-.btn{
-  /* display: inline-block; */
-  border:transparent;
-  line-height: normal;
-  background: var(--accent-color);
-  color:#fff;
-  transition: color 0.3s ease,
-  background-color 0.3s ease;
-}
-.link{
-  text-decoration: none;
-  transition: color 0.3s ease,
-  opacity 0.6;
-}
-.link:hover{
-  color:var(--text-color);
-  opacity: 0.8;
-}
-.link:active{
-  opacity: 0.6;
-}
+
 
 .site-main{
   flex-grow: 1;

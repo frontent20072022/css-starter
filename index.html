@@ -17,14 +17,14 @@
       </a>
       <nav class="site-header-nav">
         <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Skills</li>
-          <li class="nav-item">About us</li>
-          <li class="nav-item">Pricing</li>
-          <li class="nav-item">Contacts</li>
+          <li class="nav-item"><a href="#" class="link nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="link nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#" class="link nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#" class="link nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="link nav-link">Contacts</a></li>
         </ul>
       </nav>
-      <a class="site-header-link" href="#">Let's talk</a>
+      <button class="btn site-header-btn" href="#">Let's talk</button>
     </div>
   </header>
 
@@ -57,89 +57,174 @@
         <div class="grid-container">
 
           <div class="speaking">
-            <img  class="speaking-img" src="img/speaking.svg" alt="speaking-friends" width="390" height="390">
-            <h3 class="title speaking-title">Speaking</h3>
-            <p class="text speaking-text">
-              Improve your English skills and confidence.<br>
-              Live classes and interactive lessons online.<br>
-              20% extra free for a limited time only</p>
-              <br>
-            <p class="text speaking-text">
-              Learn English online and improve your<br>
-              skills through our high-quality courses<br>
-              and resources – all designed for adult language learners.
-            </p>
-                <button class="btn skills-btn">Learn more</button>
-          </div>
-
-          <div class="writing">
-                    <img class="writing-img" src="img/writing.svg" alt="Writing" width="293" height="293">
-                    <h3 class="title writing-title">Writing</h3>
-                    <button class="btn skills-btn">Learn more</button>
-          </div>
-
-          <div class="reading">
-                    <img class="reading-img" src="img/reading.svg" alt="Reading-img" width="371" height="247">
-                    <h3 class="title reading-title">Reading</h3>
-                    <p class="text reading-text">
-                      perception and response actions of the user<br>
-                      resulting from the use and/or upcoming use<br>
-                      of the product, system or service
-                    </p>
-                    <button class="btn skills-btn">Learn more</button>
-          </div>
-
-          <div class="listening">
-                  <div class="listening-intro">
-                    <h3 class="title listening-title">
-                      Listening
-                    </h3>
-                    <p class="text listening-text">
-                      Here you can find activities to practise<br>
-                      your listening skills. Listening will help you<br>
-                      to improve your understanding
-                    </p>
-                    <button class="btn skills-btn">Learn more</button>
-                  </div>
-                  <img class="listening-img" src="img/listening.svg" alt="Speaking img" width="382" height="255">
-          </div>
-        </div>
-
-      </section>
-
-      <!-- ABOUT US -->
-
-      <section class="about-us">
-        <div class="about-us-intro">
-          <h2 class="title about-us-title">
-            About-us
-          </h2>
-          <p class="text about-us-text">
-            The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
-          </p>
-          <ul class="about-us-list">
-            <li class="about-us-item">
-              <div class="group">
-                <p class="text number">800</p>
-                <p class="text">Pupils</p>
+            <div class="speaking-group">
+              <img  class="speaking-img" src="img/speaking.svg" alt="speaking-friends" width="390" height="390">
+              <h3 class="title grid-heading">Speaking</h3>
+              <p class="text speaking-text">
+                Improve your English skills and confidence.
+                Live classes and interactive lessons online.
+                20% extra free for a limited time only<br><br>
+                <!-- <p class="text speaking-text"> -->
+                  Learn English online and improve your
+                  skills through our high-quality courses
+                  and resources – all designed for adult language learners.
+                </p>
               </div>
+              <button class="btn skills-btn">Learn more</button>
+            </div>
+
+            <div class="writing">
+              <img class="writing-img" src="img/writing.svg" alt="Writing" width="293" height="293">
+              <h3 class="title grid-heading">Writing</h3>
+              <p class="text writing-text">
+                One of the most important and extensive
+                areas of natural science, the science that
+                studies substances, also their composition
+              </p>
+              <button class="btn skills-btn">Learn more</button>
+            </div>
+
+            <div class="reading">
+              <img class="reading-img" src="img/reading.svg" alt="Reading-img" width="371" height="247">
+              <h3 class="title grid-heading">Reading</h3>
+              <p class="text reading-text">
+                perception and response actions of the user<br>
+                resulting from the use and/or upcoming use<br>
+                of the product, system or service
+              </p>
+              <button class="btn skills-btn">Learn more</button>
+            </div>
+
+            <div class="listening">
+              <div class="listening-intro">
+                <h3 class="title grid-heading">
+                  Listening
+                </h3>
+                <p class="text listening-text">
+                  Here you can find activities to practise<br>
+                  your listening skills. Listening will help you<br>
+                  to improve your understanding
+                </p>
+                <button class="btn skills-btn">Learn more</button>
+              </div>
+              <img class="listening-img" src="img/listening.svg" alt="Speaking img" width="382" height="255">
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ABOUT US -->
+
+        <section class="about-us">
+          <div class="about-us-intro">
+            <h2 class="title about-us-title">
+              About-us
+            </h2>
+            <p class="text about-us-text">
+              The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
+            </p>
+            <div class="description">
+              <dl class="about-us-list">
+                <dt class="text-number">800</dt>
+                <dd class="text">Pupils</dd>
+              </dl>
+              <dl class="about-us-list">
+                <dt class="text-number">18</dt>
+                <dd class="text">Teachers</dd>
+              </dl>
+              <dl class="about-us-list">
+                <dt class="text-number">6</dt>
+                <dd class="text">Foreign languages</dd>
+              </dl>
+            </div>
+          </div>
+          <img class="about-us-img" src="img/about-us.svg" alt="About-us-img" width="500" height="500">
+        </section>
+
+        <!-- PRICING -->
+        <section class="pricing">
+          <h2 class="title pricing-title">Pricing</h2>
+          <div class="about-pricing">
+
+            <div class="self-study">
+              <img class="pricing-img" src="img/self-study.svg" alt="Self study online course" width="311" height="311">
+              <h3 class="title about-pricing-title">Self-study online course</h3>
+              <p class="text about-pricing-text">
+                Start learning English online in live classes
+                with qualified EC teachers and students
+                from all over the world.
+              </p>
+
+              <!-- Narxlar -->
+
+
+            </div>
+
+            <div class="self-study">
+              <img class="pricing-img" src="img/live.svg" alt="Live online classes" width="391" height="283">
+              <h3 class="title about-pricing-title">
+                Live online classes
+              </h3>
+              <p class="text about-pricing-text">
+                Interactive group classes with expert
+                teachers. Free 7-day trial
+              </p>
+
+
+            </div>
+
+            <div class="self-study">
+              <img class="pricing-img" src="img/personal.svg" alt="Personal tuition" width="340" height="340">
+              <h2 class="title about-pricing-title">
+                Personal Tuition
+              </h2>
+              <p class="text personal-tuition">
+                Online one-to-one English tutoring – enjoy
+                our first session for only
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT-US -->
+        <section class="contact-us">
+          <img class="contact-us-img" src="img/contact-us.svg" alt="Contact us img" width="477" height="429">
+          <div class="contact-us-intro">
+            <h3 class="title contact-us-title">
+              Contact Us
+            </h3>
+            <p class="text contact-us-text">
+              Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources
+            </p>
+            <form class="email-form" action="">
+              <input class="email-input" type="email" placeholder="Enter your E-mail">
+              <button  class="btn contact-us-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--  FOOTER -->
+    <footer>
+      <div class="container footer-container">
+        <img class="footer-logo" src="img/logo.svg" alt="Footer logo" width="106" height="54">
+        <nav>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="link footer-link" href="#">Terms and Conditions</a>
             </li>
-            <li class="about-us-item">
-              <p class="text number">18</p>
-              <p class="text">Teachers</p>
+            <li class="footer-item">
+              <a class="link footer-link" href="#">Privacy policy</a>
             </li>
-            <li class="about-us-item">
-              <p class="text number">6</p>
-              <p class="text">Foreign languages</p>
+            <li class="footer-item">
+              <a class="link footer-link" href="#">Cookie policy</a>
             </li>
           </ul>
-        </div>
-        <img class="about-us-img" src="img/about-us.svg" alt="About-us-img" width="500" height="500">
-      </section>
+        </nav>
+      </div>
+    </footer>
 
-    </div>
-  </main>
-
-      <script src="main.js"></script>
-    </body>
-    </html>
+    <script src="main.js"></script>
+  </body>
+  </html>

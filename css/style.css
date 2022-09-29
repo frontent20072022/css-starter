@@ -54,18 +54,19 @@ img{
 }
 .site-header-container{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 .site-header-logo {
   display: flex;
 }
-.site-header-logo-img {
-  width: 106px;
-  height: 54px;
+.site-header-logo-img{
+  display: inline-block;
 }
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   list-style: none;
   font-style: 20px;
@@ -73,27 +74,30 @@ img{
 .nav-item:not(:last-child){
   margin-right: 30px;
 }
-.site-header-link {
-  text-decoration: none;
+.nav-link{
+  color: var(--accent-color)
+}
+.site-header-btn{
   color: var(--title-color);
   padding: 17px 57px;
-  border: 2px solid var(--accent-color);
   border-radius: 5px;
-  font-style: 24px;
+  font-size: 24px;
   line-height: normal;
   text-transform: capitalize;
   transition: background-color 0.4s ease,
   color 0.4s ease,
   opacity 0.4s ease;
 }
-.site-header-link:hover{
+.site-header-btn:hover{
   background-color: var(--accent-color);
   opacity: 0.8;
   color:#fff;
 }
-.site-header-link:active{
+.site-header-btn:active{
   opacity: 0.6;
 }
+
+
 /* Main */
 .text {
   margin: 0;
@@ -107,21 +111,33 @@ img{
   line-height: 80px;
 }
 .btn{
-  display: inline-block;
+  /* display: inline-block; */
+  border:transparent;
   line-height: normal;
   background: var(--accent-color);
   color:#fff;
   transition: color 0.3s ease,
   background-color 0.3s ease;
 }
-
-
+.link{
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.6;
+}
+.link:hover{
+  color:var(--text-color);
+  opacity: 0.8;
+}
+.link:active{
+  opacity: 0.6;
+}
 
 .site-main{
   flex-grow: 1;
 }
 .learning-languages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 92px;
@@ -178,12 +194,6 @@ img{
   margin-bottom: 92px;
 }
 
-.speaking{ grid-area: menu; }
-.writing{ grid-area: main; }
-
-.reading{ grid-area: right; }
-.listening{ grid-area: footer; }
-
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -196,45 +206,52 @@ img{
   padding: 20px 20px;
 } */
 
+
+.grid-heading {
+  font-size: 30px;
+  color:var(--accent-color);
+}
+
 .speaking {
   background-color: var(--bg-color);
   border-radius: 10px;
   padding: 35px 23px;
+  padding-bottom: 92px;
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 .speaking-img {
   display: flex;
   margin: 0;
 }
-.speaking-title {
-  font-size: 30px;
-
-}
 
 .speaking-text{
-  margin-bottom: 45px;
+  max-width: 347px;
+  margin-bottom: 35px;
+  margin-bottom: auto-;
 }
-.btn {
-}
+
 .skills-btn {
   padding: 15px 50px;
   border-radius: 5px;
-
 }
 
 .writing {
-  /* position: relative; */
+  grid-area: main;
   background-color: var(--bg-color);
   border-radius: 10px;
-  padding: 44px 42px;
+  padding: 0 44px 42px;
 }
-.writing-img {
-  /* position: absolute;
-  right: 10px; */
-}
-.writing-title {
-  margin-bottom: 96px;
+
+.writing-text {
+  margin-bottom: 35px;
 }
 .reading {
+  grid-area: right;
   background-color: var(--bg-color);
   border-radius: 10px;
   padding: 43px;
@@ -248,15 +265,15 @@ img{
 .reading-text {
   margin-bottom: 35px;
 }
-.listening {
-  background-color: var(--bg-color);
-  border-radius: 10px;
-  padding: 43px;
-}
+
 .listening{
+  grid-area: footer;
   display: flex;
   align-items: center;
   justify-content:space-between;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 43px;
 }
 .listening-title {
 }
@@ -270,25 +287,151 @@ img{
 /* ABOUT-US */
 .about-us {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 188px;
 }
 
 .about-us-title {
-font-size: 48px;
-margin-bottom: 23px;
+  font-size: 48px;
+  margin-bottom: 23px;
+}
+.about-us-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us-text {
+  max-width: 635px;
+  width: 100%;
+}
+.description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-number{
+  font-size: 48px;
+  color: #2A3246;
+}
+
+/* PRICING */
+
+.pricing {
+  margin-bottom: 257px;
+  flex-wrap: wrap;
+}
+.pricing-title {
+  text-align: center;
+  margin-bottom: 57px;
+}
+.pricing-img{
+  min-height: 340px;
+  margin-bottom: 40px;
+}
+.self-study:not(:last-child){
+  margin-right: 100px;
+}
+.about-pricing {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.about-pricing-title{
+  font-size: 30px;
+  line-height: 48px;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.about-pricing-text {
+  max-width: 400px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  color:var(--text-color)
+}
+
+/* CONTACT-US */
+.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 133px;
+  border-bottom: 1px solid #C4C4C4;
+}
+.contact-us-img {
+}
+.contact-us-intro {
+  max-width: 780px;
+  width: 100%;
+}
+.title {
+}
+.contact-us-title {
+  font-size: 48px;
+  color:var(--title-color);
+  margin-bottom: 37px;
 }
 .text {
 }
-.about-us-text {
+.contact-us-text {
+  font-size: 20px;
+  line-height: 30px;
+  color:var(--text-color);
+  margin-bottom: 52px;
 }
-.about-us-list {
+.email-input {
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  text-transform: capitalize;
+  padding: 23px 125px 23px 33px;
+  color: var(--accent-color);
+  margin-right: 12px;
 }
-.about-us-item {
+.email-form{
+  max-width: 780px;
+  width: 100%;
+  display: flex;
 }
-.group {
+.contact-us-btn{
+  padding: 21px 81px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  color:#fff;
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
-.number {
+
+/* FOOTER */
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  flex-wrap: wrap;
 }
-.about-us-img {
+.footer-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color:var(--text-color)
+}
+.footer-item:not(:last-child){
+  margin-right: 30px;
+}
+.footer-item:first-child{
+  list-style: none;
+}
+.footer-link{
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-color);
 }

@@ -60,6 +60,7 @@ img{
 }
 .btn{
   /* display: inline-block; */
+  white-space: nowrap;
   border:transparent;
   line-height: normal;
   background: var(--accent-color);
@@ -338,32 +339,38 @@ img{
 .pricing {
   margin-bottom: 257px;
   flex-wrap: wrap;
-  position: relative;
 }
 .pricing-title {
   text-align: center;
   margin-bottom: 57px;
 }
+.self-study{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: calc((100% - 100px) / 3);
+  min-height: 585px;
+}
+.self-study:not(:last-child){
+  margin-right: 50px;
+}
 .pricing-img{
+  min-height: 340px;
   width: 100%;
   height: 100%;
   display: block;
   object-fit: contain;
   margin-bottom: auto;
 }
-.self-study{
-  max-width: 400px;
-  min-height: 580px;
-  /* height: 100%; */
-  width: 100%;
+.price-info{
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 245px
 }
-.self-study:not(:last-child){
-  margin-right: 100px;
-}
+
 .about-pricing {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 .about-pricing-title{
   font-size: 30px;
@@ -377,7 +384,22 @@ img{
   line-height: 30px;
   color:var(--text-color)
 }
-
+.price-cours{
+  display: flex;
+  align-items: center;
+  background-color: #EEE;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 9px 22px;
+}
+.price-cours >b{
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 400;
+  color:var(--accent-color);
+  margin-right: 8px;
+}
 /* CONTACT-US */
 .contact-us {
   display: flex;
@@ -440,10 +462,6 @@ img{
   padding-bottom: 35px;
   flex-wrap: wrap;
 }
-nkbkbk
-jbb
-sbhsdbvhibsvbbv
-
 .footer-list{
   margin: 0;
   padding: 0;
